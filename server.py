@@ -27,10 +27,16 @@ def hello():
 
 @app.route("/status")
 def status():
+    # count_users=0
+    # for i in range(len(database)):  # перебираем все вложенные списки
+    #     for name in range(database['name']):
+    #         if 'name' != 'name':
+    #             count_users += 1
     return {
             "status": True,
             "name": "PYMesseger",
-            "time": time.time()
+            "time": time.time(),
+            #'users online': count_users,
         }
 
 
